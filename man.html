@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pacesetters Academy" />
+    <meta property="og:description" content="Premier Educational Institution for JAMB, WAEC, and NECO Preparation" />
+    <meta property="og:image" content="Logo.jpg" />
+    <meta property="og:url" content="https://pacesettersacademy.github.io/pacesettersweb/index.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Pacesetters Academy | Excellence in Education</title>
+    <link rel="shortcut icon" href="Logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="Logotitle.png" alt="Pacesetters Academy Logo">
+                    <span>Pacesetters Academy</span>
+                </div>
+                <button class="contact-btn" onclick="sendToWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> Contact Us
+                </button>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="container">
+                <h1 data-aos="fade-up">Shape Your Future with Excellence</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Premier preparation for JAMB, WAEC, and NECO examinations</p>
+                <button class="cta-button" onclick="sendToWhatsApp()" data-aos="fade-up" data-aos-delay="200">
+                    Start Your Journey
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 data-aos="fade-up">Why Choose Pacesetters?</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Expert Guidance</h3>
+                    <p>Experienced teachers dedicated to your success</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Online Learning</h3>
+                    <p>Interactive virtual classes from anywhere</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Practice Tests</h3>
+                    <p>Comprehensive exam preparation materials</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-users"></i>
+                    <h3>Personal Support</h3>
+                    <p>Individual attention and feedback</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects">
+        <div class="container">
+            <h2 data-aos="fade-up">Our Subjects</h2>
+            <div class="subjects-grid">
+<div class="subject-card" data-aos="fade-up">Mathematics</div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="100">English Language</div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="200">Physics</div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="300">Chemistry</div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="400">Biology</div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="500">Christian Religious Studies</div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="600">Further Mathematics</div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="700">Geography</div>
+                <div class="subject-card" data-aos="fade-up" data-aos-delay="800">Economics</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content" data-aos="zoom-in">
+            <h3>Join Our Program</h3>
+            <p>Please enter your name to continue</p>
+            <input type="text" id="nameInput" placeholder="Your Full Name">
+            <p id="nameError" class="error">Please enter your name to continue</p>
+            <div class="modal-buttons">
+                <button onclick="closeModal()">Cancel</button>
+                <button onclick="sendToDm()" class="primary">
+                    <i class="fab fa-whatsapp"></i> Continue to WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Button -->
+    <button id="floatingBtn" class="floating-btn" onclick="sendToWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Logotitle.png" alt="Pacesetters Academy Logo">
+                    <p>Pacesetters Academy</p>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2024 Pacesetters Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
